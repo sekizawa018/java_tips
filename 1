@@ -1,0 +1,64 @@
+配列のリバース
+ for(int i=0;i<nums.length/2;i++){     配列要素数　割る２で何回入れ替える必要があるかわかる
+      int temp=nums[i];　　　　　　　　tempを用意して入れ替え
+
+      nums[i]=nums[nums.length-1-i];　　　length-1-i
+
+      nums[nums.length-1-i]=temp;
+
+一番単純なソート（昇順）             		すべてを比べている一番原始的なソート
+int[] nums={3,8,10,5,4};
+	for(int i=0;i<nums.length-1;i++){
+		for(int j=i+1;j<nums.length;j++){
+			if(nums[i] > nums[j]){
+				int temp=nums[i];
+				nums[i]=nums[j];
+				nums[j]=temp;
+        
+        配列のシャッフル　　　　　　　　　　　　ランダムに選んだインデックスを一番最後に代入している
+ int[] nums={1,2,3,4,5};　　　　　　　　　
+           for(int i=0;i<nums.length-1;i++){
+               int index=new Random().nextInt(nums.length-i);
+               int temp=nums[index];
+               nums[index]=nums[nums.length-1-i];
+               nums[nums.length-1-i]=temp;
+               
+               下一桁を出すときは　　　　　　　　　　　　　　１０で割った余りが下一桁
+System.out.print("四桁の数字を入力>");　　　　　　　商をさらに１０で割ればその下一桁がだせる
+  int num=new Scanner(System.in).nextInt();
+         for(int i=0;i<4;i++);
+         System.out.println(num%10);
+         num/=10;
+         
+       
+         
+         System.out.print("秒を入力>");
+  5         int num=new Scanner(System.in).nextInt();
+  6         int time=num%60;
+  7         int minute=num%3600/60; 　　　　　　　　//3600で割った余りが時間分を除いた秒数
+  8         int hour=num/3600;
+  9         System.out.printf("%02d:%02d:%02d",hour,minute,time);
+
+	String str="Javaで開発";
+		int len=str.length();
+		System.out.println("文字数は"+len);
+		//その文字列が~から始まるか？
+		if(str.startsWith("a")){
+
+		}
+		//その文字列の終わりが～か？
+		if(str.endsWith("発")){
+
+		}
+		//その文字列を含むか？
+		if(str.contains("で")){
+		}
+		//その文字列は等しいか？
+		if(str.equals("こんにちは")){
+		}
+		//部分文字列
+		String s=str.substring(0,4);
+		System.out.println(s);//Java
+		//最後の一文字削除
+		String s1=str.substring(0,str.length()-1);
+		System.out.println(s1);
