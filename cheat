@@ -1,0 +1,53 @@
+合計の値を計算するときの変数は
+int sum
+
+偶数を調べるときに使うお決まりの文句
+if(i % 2==0)
+奇数
+if(i % 2!=0)
+３の倍数
+if(i % 3==0)
+
+break;  　『直近の』ループを抜ける
+continue; 　一回スキップ。以降の処理をせずにループに戻る
+
+拡張for文　配列のリテラルに変更をしないときなどはこちら
+for(int n : arr){} 
+
+(Arrays.toString(配列名));
+で[1,2,3,4]みたいに出力できる
+
+booleanの変数名は　なんとかis(状態)　
+
+do,while文はwhileの（）内がトゥルーだった場合doの｛｝内を繰り返す
+do{
+}while();
+
+定数。中身が変化しないときに宣言して使う
+final int 
+
+ラベル。ラベル名は自由。ラベルのついたループをブレイクする
+outer:
+break outer;
+
+ジャグ型の宣言の仕方
+最初に何列か宣言。そこで各リテラルまで一度に宣言はできない。
+int[][] data1=new int[2][];
+        data1[0]=new int[3];
+        data1[1]=new int[4];
+
+nextLineはエンターキーまでを含んで処理するので、以下のようにすると
+エンターキーの入力待ちにできる。
+new java.util.Scanner(System.in).nextLine();
+
+アクセス修飾子　メソッドがどこから呼べるか
+public だとどこからでも呼べる
+public を外すと同じクラス内でしかよべない？
+
+ユーザーから入力を受けるときはcharで直接受け取ることはできない。
+Stringからcharへの変換。
+s=hello
+cにはhが入る
+char c=s.charAt(0);
+cにはeが入る
+char c=s.charAt(1);
