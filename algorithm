@@ -1,9 +1,7 @@
 配列のリバース
  for(int i=0;i<nums.length/2;i++){     配列要素数　割る２で何回入れ替える必要があるかわかる
       int temp=nums[i];　　　　　　　　tempを用意して入れ替え
-
       nums[i]=nums[nums.length-1-i];　　　length-1-i
-
       nums[nums.length-1-i]=temp;
 
 一番単純なソート（昇順）             		すべてを比べている一番原始的なソート
@@ -15,7 +13,7 @@ int[] nums={3,8,10,5,4};
 				nums[i]=nums[j];
 				nums[j]=temp;
         
-        配列のシャッフル　　　　　　　　　　　　ランダムに選んだインデックスを一番最後に代入している
+配列のシャッフル　　　　　　　　　　　　ランダムに選んだインデックスを一番最後に代入している
  int[] nums={1,2,3,4,5};　　　　　　　　　
            for(int i=0;i<nums.length-1;i++){
                int index=new Random().nextInt(nums.length-i);
