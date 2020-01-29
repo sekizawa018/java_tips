@@ -60,3 +60,16 @@ System.out.print("四桁の数字を入力>");　　　　　　　商をさら�
 		//最後の一文字削除
 		String s1=str.substring(0,str.length()-1);
 		System.out.println(s1);
+		
+配列の結合
+public static int[] arrMerge(int[] arr1,int[] arr2){
+		int[] retArr=new int[arr1.length+arr2.length];
+		for(int i=0;i<retArr.length;i++){
+			if(i<arr1.length){
+				retArr[i]=arr1[i];
+			}else{
+				retArr[i]=arr2[i-arr1.length];
+			}
+		}
+		return retArr;
+	}
