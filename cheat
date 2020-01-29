@@ -51,3 +51,20 @@ cにはhが入る
 char c=s.charAt(0);
 cにはeが入る
 char c=s.charAt(1);
+
+Scanner s=new Scanner(System.in);
+Random rand=new Random();
+new Scannerするたびメモリを消費するのを防ぐ 
+
+s.close();//スキャナークローズ　なくてもいいけどあるとグッド
+
+System.exit(0);　アプリ強制終了　０は正常終了の意
+
+char配列をString型に変換
+インテジャーパースイントの反対
+str=String.valueOf(char配列)
+int1をString"1"にしている
+str=String.valueOf(1)
+
+wordに入れたString型をchar型の配列にする
+word.toCharArray();
