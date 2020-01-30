@@ -1,0 +1,8 @@
+リバース
+util.Common.arrReverse(arr);
+シャッフル
+util.Common.arrShuffle(arr);
+昇順
+util.Common.ascendingOrder(arr);
+降順
+util.Common.descendingOrder(arr);
