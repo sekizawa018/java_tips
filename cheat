@@ -60,6 +60,11 @@ s.close();//スキャナークローズ　なくてもいいけどあるとグ�
 
 System.exit(0);　アプリ強制終了　０は正常終了の意
 
+Stringをintに変換
+String hoge = "1";
+int num = Integer.parseInt(hoge);
+System.out.println(num);
+
 char配列をString型に変換
 インテジャーパースイントの反対
 str=String.valueOf(char配列)
